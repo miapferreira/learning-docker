@@ -2,9 +2,6 @@
 
 Project created to apply concepts learned using docker and docker-compose.
 
-Volumes
-Examples of commands of volumes:
-
 # docker container run -ti --mount type=bind,src=/volume,dst=/volume ubuntu
 # docker container run -ti --mount type=bind,src=/root/primeiro_container,dst=/volume ubuntu
 # docker container run -ti --mount type=bind,src=/root/primeiro_container,dst=/volume,ro ubuntu
