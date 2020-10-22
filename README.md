@@ -68,11 +68,11 @@ ENTRYPOINT ./goapp
 
 Exemplos de comandos utilizados no Dockerfile:
 
-ADD => Copia novos arquivos, diretórios, arquivos TAR ou arquivos remotos e os adicionam ao filesystem do container;
+- ADD => Copia novos arquivos, diretórios, arquivos TAR ou arquivos remotos e os adicionam ao filesystem do container;
 
-CMD => Executa um comando, diferente do RUN que executa o comando no momento em que está "buildando" a imagem, o CMD executa no início da execução do container;
+- CMD => Executa um comando, diferente do RUN que executa o comando no momento em que está "buildando" a imagem, o CMD executa no início da execução do container;
 
-LABEL => Adiciona metadados a imagem como versão, descrição e fabricante;
+- LABEL => Adiciona metadados a imagem como versão, descrição e fabricante;
 
 COPY => Copia novos arquivos e diretórios e os adicionam ao filesystem do container;
 
