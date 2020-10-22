@@ -66,7 +66,9 @@ WORKDIR /app
 COPY --from=buildando /src/goapp /app
 ENTRYPOINT ./goapp
 
-Exemplos de comandos utilizados no Dockerfile:
+----------------------------------------------------------------------------------------------
+
+# Exemplos de comandos utilizados no Dockerfile:
 
 - ADD => Copia novos arquivos, diretórios, arquivos TAR ou arquivos remotos e os adicionam ao filesystem do container;
 
@@ -74,36 +76,41 @@ Exemplos de comandos utilizados no Dockerfile:
 
 - LABEL => Adiciona metadados a imagem como versão, descrição e fabricante;
 
-COPY => Copia novos arquivos e diretórios e os adicionam ao filesystem do container;
+- COPY => Copia novos arquivos e diretórios e os adicionam ao filesystem do container;
 
-ENTRYPOINT => Permite você configurar um container para rodar um executável, e quando esse executável for finalizado, o container também será;
+- ENTRYPOINT => Permite você configurar um container para rodar um executável, e quando esse executável for finalizado, o container também será;
 
-ENV => Informa variáveis de ambiente ao container;
+- ENV => Informa variáveis de ambiente ao container;
 
-EXPOSE => Informa qual porta o container estará ouvindo;
+- EXPOSE => Informa qual porta o container estará ouvindo;
 
-FROM => Indica qual imagem será utilizada como base, ela precisa ser a primeira linha do Dockerfile;
+- FROM => Indica qual imagem será utilizada como base, ela precisa ser a primeira linha do Dockerfile;
 
-MAINTAINER => Autor da imagem; 
+- MAINTAINER => Autor da imagem; 
 
-RUN => Executa qualquer comando em uma nova camada no topo da imagem e "commita" as alterações. Essas alterações você poderá utilizar nas próximas instruções de seu Dockerfile;
+- RUN => Executa qualquer comando em uma nova camada no topo da imagem e "commita" as alterações. Essas alterações você poderá utilizar nas próximas instruções de seu Dockerfile;
 
-USER => Determina qual o usuário será utilizado na imagem. Por default é o root;
+- USER => Determina qual o usuário será utilizado na imagem. Por default é o root;
 
-VOLUME => Permite a criação de um ponto de montagem no container;
+- VOLUME => Permite a criação de um ponto de montagem no container;
 
-WORKDIR => Responsável por mudar do diretório / (raiz) para o especificado nele;
+- WORKDIR => Responsável por mudar do diretório / (raiz) para o especificado nele;
 
-#DockerHub e Registry - Exemplo comandos: 
+----------------------------------------------------------------------------------------------
 
-docker image inspect debian
-docker history linuxtips/apache:1.0
-docker login
-docker login registry.suaempresa.com
-docker push linuxtips/apache:1.0
-docker pull linuxtips/apache:1.0
-docker image ls
-docker container run -d -p 5000:5000 --restart=always --name registry registry:2
-docker tag IMAGEMID localhost:5000/apache
+# DockerHub e Registry - Exemplo comandos: 
+
+- docker image inspect debian
+- docker history linuxtips/apache:1.0
+- docker login
+- docker login registry.suaempresa.com
+- docker push linuxtips/apache:1.0
+- docker pull linuxtips/apache:1.0
+- docker image ls
+- docker container run -d -p 5000:5000 --restart=always --name registry registry:2
+- docker tag IMAGEMID localhost:5000/apache
+
+----------------------------------------------------------------------------------------------
+
 
  
