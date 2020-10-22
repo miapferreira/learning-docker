@@ -1,8 +1,8 @@
 # learning-docker
 
-Project created to apply concepts learned using docker and docker-compose.
+# Projeto criado para aprender e aplicar os conceitos do Docker na prática
 
-Exemplos de Dockerfiles:
+- Exemplos de Dockerfiles:
  
  FROM debian
 
